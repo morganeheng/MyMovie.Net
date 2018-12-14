@@ -1,0 +1,1 @@
+Projet réalisé à l'école. Il s'agit d'un gestionaire de fiches de films en c# avec .NET, Entity Framework, Visual Studio.
