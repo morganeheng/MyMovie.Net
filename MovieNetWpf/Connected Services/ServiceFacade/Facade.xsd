@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/MovieNET" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MovieNET" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:54321/Facade.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Actor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Firstname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_actor" type="xs:int" />
+      <xs:element minOccurs="0" name="Lastname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Movie" nillable="true" type="tns:ArrayOfMovie" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Actor" nillable="true" type="tns:Actor" />
+  <xs:complexType name="ArrayOfMovie">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Movie" nillable="true" type="tns:Movie" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMovie" nillable="true" type="tns:ArrayOfMovie" />
+  <xs:complexType name="Movie">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Actor" nillable="true" type="tns:ArrayOfActor" />
+      <xs:element minOccurs="0" name="Comment" nillable="true" type="tns:ArrayOfComment" />
+      <xs:element minOccurs="0" name="Director" nillable="true" type="tns:Director" />
+      <xs:element minOccurs="0" name="Duration" type="ser:duration" />
+      <xs:element minOccurs="0" name="Id_director" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_image" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_movie" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_type" type="xs:int" />
+      <xs:element minOccurs="0" name="Image" nillable="true" type="tns:Image" />
+      <xs:element minOccurs="0" name="MovieType" nillable="true" type="tns:MovieType" />
+      <xs:element minOccurs="0" name="Rating" type="xs:double" />
+      <xs:element minOccurs="0" name="Synopsis" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Movie" nillable="true" type="tns:Movie" />
+  <xs:complexType name="ArrayOfActor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Actor" nillable="true" type="tns:Actor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfActor" nillable="true" type="tns:ArrayOfActor" />
+  <xs:complexType name="ArrayOfComment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Comment" nillable="true" type="tns:Comment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfComment" nillable="true" type="tns:ArrayOfComment" />
+  <xs:complexType name="Comment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Comment1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_comment" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_movie" type="xs:int" />
+      <xs:element minOccurs="0" name="Id_user" type="xs:int" />
+      <xs:element minOccurs="0" name="Movie" nillable="true" type="tns:Movie" />
+      <xs:element minOccurs="0" name="Rating" type="xs:int" />
+      <xs:element minOccurs="0" name="User" nillable="true" type="tns:User" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Comment" nillable="true" type="tns:Comment" />
+  <xs:complexType name="User">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Comment" nillable="true" type="tns:ArrayOfComment" />
+      <xs:element minOccurs="0" name="Id_user" type="xs:int" />
+      <xs:element minOccurs="0" name="Login" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="User" nillable="true" type="tns:User" />
+  <xs:complexType name="Director">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Firstname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id_director" type="xs:int" />
+      <xs:element minOccurs="0" name="Lastname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Movie" nillable="true" type="tns:ArrayOfMovie" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Director" nillable="true" type="tns:Director" />
+  <xs:complexType name="Image">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id_Image" type="xs:int" />
+      <xs:element minOccurs="0" name="Movie" nillable="true" type="tns:ArrayOfMovie" />
+      <xs:element minOccurs="0" name="URL" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Image" nillable="true" type="tns:Image" />
+  <xs:complexType name="MovieType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id_type" type="xs:int" />
+      <xs:element minOccurs="0" name="Movie" nillable="true" type="tns:ArrayOfMovie" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MovieType" nillable="true" type="tns:MovieType" />
+  <xs:complexType name="ArrayOfDirector">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Director" nillable="true" type="tns:Director" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDirector" nillable="true" type="tns:ArrayOfDirector" />
+  <xs:complexType name="ArrayOfImage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Image" nillable="true" type="tns:Image" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfImage" nillable="true" type="tns:ArrayOfImage" />
+  <xs:complexType name="ArrayOfMovieType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MovieType" nillable="true" type="tns:MovieType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMovieType" nillable="true" type="tns:ArrayOfMovieType" />
+  <xs:complexType name="ArrayOfUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="User" nillable="true" type="tns:User" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUser" nillable="true" type="tns:ArrayOfUser" />
+</xs:schema>

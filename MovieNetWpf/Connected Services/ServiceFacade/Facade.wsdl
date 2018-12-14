@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Facade" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:54321/Facade.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:54321/Facade.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:54321/Facade.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/MovieNET" />
+      <xsd:import schemaLocation="http://localhost:54321/Facade.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IFacade_CreateActor_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateActor" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_CreateActor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateActorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_DeleteActor_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteActor" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_DeleteActor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteActorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_ModifyActor_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyActor" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_ModifyActor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyActorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectOneActor_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectOneActor" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectOneActor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectOneActorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectAllActor_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllActor" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectAllActor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllActorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectActorByMovie_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectActorByMovie" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectActorByMovie_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectActorByMovieResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_CreateComment_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateComment" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_CreateComment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateCommentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_DeleteComment_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteComment" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_DeleteComment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCommentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_ModifyComment_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyComment" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_ModifyComment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyCommentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectOneComment_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectOneComment" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectOneComment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectOneCommentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectAllComment_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllComment" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectAllComment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllCommentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectCommentByMovie_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCommentByMovie" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectCommentByMovie_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectCommentByMovieResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectRating_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectRating" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectRating_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectRatingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_CreateDirector_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDirector" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_CreateDirector_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateDirectorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_DeleteDirector_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDirector" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_DeleteDirector_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDirectorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_ModifyDirector_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyDirector" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_ModifyDirector_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyDirectorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectOneDirector_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectOneDirector" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectOneDirector_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectOneDirectorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectAllDirector_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllDirector" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectAllDirector_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllDirectorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_CreateImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateImage" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_CreateImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_DeleteImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteImage" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_DeleteImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_ModifyImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyImage" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_ModifyImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectOneImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectOneImage" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectOneImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectOneImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectAllImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllImage" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectAllImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_CreateMovie_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateMovie" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_CreateMovie_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateMovieResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_DeleteMovie_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMovie" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_DeleteMovie_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMovieResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_ModifyMovie_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyMovie" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_ModifyMovie_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyMovieResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectOneMovie_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectOneMovie" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectOneMovie_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectOneMovieResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectAllMovie_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllMovie" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectAllMovie_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllMovieResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_AddMovieActors_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddMovieActors" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_AddMovieActors_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddMovieActorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_DeleteMovieActors_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMovieActors" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_DeleteMovieActors_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMovieActorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectMovieByTitle_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectMovieByTitle" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectMovieByTitle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectMovieByTitleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectMovieByMovieType_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectMovieByMovieType" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectMovieByMovieType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectMovieByMovieTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_CreateMovieType_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateMovieType" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_CreateMovieType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateMovieTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_DeleteMovieType_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMovieType" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_DeleteMovieType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteMovieTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_ModifyMovieType_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyMovieType" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_ModifyMovieType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyMovieTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectOneMovieType_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectOneMovieType" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectOneMovieType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectOneMovieTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectAllMovieType_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllMovieType" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectAllMovieType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllMovieTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_CreateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUser" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_CreateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_DeleteUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUser" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_DeleteUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_ModifyUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyUser" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_ModifyUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModifyUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectOneUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectOneUser" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectOneUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectOneUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectAllUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllUser" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectAllUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_CheckUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckUser" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_CheckUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_CheckUserExist_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckUserExist" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_CheckUserExist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckUserExistResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectIdByLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectIdByLogin" />
+  </wsdl:message>
+  <wsdl:message name="IFacade_SelectIdByLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectIdByLoginResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IFacade">
+    <wsdl:operation name="CreateActor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/CreateActor" message="tns:IFacade_CreateActor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/CreateActorResponse" message="tns:IFacade_CreateActor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteActor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/DeleteActor" message="tns:IFacade_DeleteActor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/DeleteActorResponse" message="tns:IFacade_DeleteActor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyActor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/ModifyActor" message="tns:IFacade_ModifyActor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/ModifyActorResponse" message="tns:IFacade_ModifyActor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectOneActor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/SelectOneActor" message="tns:IFacade_SelectOneActor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/SelectOneActorResponse" message="tns:IFacade_SelectOneActor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllActor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/SelectAllActor" message="tns:IFacade_SelectAllActor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/SelectAllActorResponse" message="tns:IFacade_SelectAllActor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectActorByMovie">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/SelectActorByMovie" message="tns:IFacade_SelectActorByMovie_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/SelectActorByMovieResponse" message="tns:IFacade_SelectActorByMovie_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateComment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/CreateComment" message="tns:IFacade_CreateComment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/CreateCommentResponse" message="tns:IFacade_CreateComment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteComment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/DeleteComment" message="tns:IFacade_DeleteComment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/DeleteCommentResponse" message="tns:IFacade_DeleteComment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyComment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/ModifyComment" message="tns:IFacade_ModifyComment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/ModifyCommentResponse" message="tns:IFacade_ModifyComment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectOneComment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/SelectOneComment" message="tns:IFacade_SelectOneComment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/SelectOneCommentResponse" message="tns:IFacade_SelectOneComment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllComment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/SelectAllComment" message="tns:IFacade_SelectAllComment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/SelectAllCommentResponse" message="tns:IFacade_SelectAllComment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectCommentByMovie">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/SelectCommentByMovie" message="tns:IFacade_SelectCommentByMovie_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/SelectCommentByMovieResponse" message="tns:IFacade_SelectCommentByMovie_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectRating">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/SelectRating" message="tns:IFacade_SelectRating_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/SelectRatingResponse" message="tns:IFacade_SelectRating_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateDirector">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/CreateDirector" message="tns:IFacade_CreateDirector_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/CreateDirectorResponse" message="tns:IFacade_CreateDirector_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDirector">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/DeleteDirector" message="tns:IFacade_DeleteDirector_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/DeleteDirectorResponse" message="tns:IFacade_DeleteDirector_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyDirector">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/ModifyDirector" message="tns:IFacade_ModifyDirector_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/ModifyDirectorResponse" message="tns:IFacade_ModifyDirector_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectOneDirector">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/SelectOneDirector" message="tns:IFacade_SelectOneDirector_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/SelectOneDirectorResponse" message="tns:IFacade_SelectOneDirector_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllDirector">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/SelectAllDirector" message="tns:IFacade_SelectAllDirector_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/SelectAllDirectorResponse" message="tns:IFacade_SelectAllDirector_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateImage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/CreateImage" message="tns:IFacade_CreateImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/CreateImageResponse" message="tns:IFacade_CreateImage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteImage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/DeleteImage" message="tns:IFacade_DeleteImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/DeleteImageResponse" message="tns:IFacade_DeleteImage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyImage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/ModifyImage" message="tns:IFacade_ModifyImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/ModifyImageResponse" message="tns:IFacade_ModifyImage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectOneImage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/SelectOneImage" message="tns:IFacade_SelectOneImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/SelectOneImageResponse" message="tns:IFacade_SelectOneImage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllImage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/SelectAllImage" message="tns:IFacade_SelectAllImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/SelectAllImageResponse" message="tns:IFacade_SelectAllImage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateMovie">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/CreateMovie" message="tns:IFacade_CreateMovie_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/CreateMovieResponse" message="tns:IFacade_CreateMovie_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMovie">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/DeleteMovie" message="tns:IFacade_DeleteMovie_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/DeleteMovieResponse" message="tns:IFacade_DeleteMovie_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyMovie">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/ModifyMovie" message="tns:IFacade_ModifyMovie_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/ModifyMovieResponse" message="tns:IFacade_ModifyMovie_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectOneMovie">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/SelectOneMovie" message="tns:IFacade_SelectOneMovie_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/SelectOneMovieResponse" message="tns:IFacade_SelectOneMovie_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllMovie">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/SelectAllMovie" message="tns:IFacade_SelectAllMovie_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/SelectAllMovieResponse" message="tns:IFacade_SelectAllMovie_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMovieActors">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/AddMovieActors" message="tns:IFacade_AddMovieActors_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/AddMovieActorsResponse" message="tns:IFacade_AddMovieActors_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMovieActors">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/DeleteMovieActors" message="tns:IFacade_DeleteMovieActors_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/DeleteMovieActorsResponse" message="tns:IFacade_DeleteMovieActors_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectMovieByTitle">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/SelectMovieByTitle" message="tns:IFacade_SelectMovieByTitle_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/SelectMovieByTitleResponse" message="tns:IFacade_SelectMovieByTitle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectMovieByMovieType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/SelectMovieByMovieType" message="tns:IFacade_SelectMovieByMovieType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/SelectMovieByMovieTypeResponse" message="tns:IFacade_SelectMovieByMovieType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateMovieType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/CreateMovieType" message="tns:IFacade_CreateMovieType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/CreateMovieTypeResponse" message="tns:IFacade_CreateMovieType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMovieType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/DeleteMovieType" message="tns:IFacade_DeleteMovieType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/DeleteMovieTypeResponse" message="tns:IFacade_DeleteMovieType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyMovieType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/ModifyMovieType" message="tns:IFacade_ModifyMovieType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/ModifyMovieTypeResponse" message="tns:IFacade_ModifyMovieType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectOneMovieType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/SelectOneMovieType" message="tns:IFacade_SelectOneMovieType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/SelectOneMovieTypeResponse" message="tns:IFacade_SelectOneMovieType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllMovieType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/SelectAllMovieType" message="tns:IFacade_SelectAllMovieType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/SelectAllMovieTypeResponse" message="tns:IFacade_SelectAllMovieType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/CreateUser" message="tns:IFacade_CreateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/CreateUserResponse" message="tns:IFacade_CreateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/DeleteUser" message="tns:IFacade_DeleteUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/DeleteUserResponse" message="tns:IFacade_DeleteUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifyUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/ModifyUser" message="tns:IFacade_ModifyUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/ModifyUserResponse" message="tns:IFacade_ModifyUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectOneUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/SelectOneUser" message="tns:IFacade_SelectOneUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/SelectOneUserResponse" message="tns:IFacade_SelectOneUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/SelectAllUser" message="tns:IFacade_SelectAllUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/SelectAllUserResponse" message="tns:IFacade_SelectAllUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/CheckUser" message="tns:IFacade_CheckUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/CheckUserResponse" message="tns:IFacade_CheckUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserExist">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/CheckUserExist" message="tns:IFacade_CheckUserExist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/CheckUserExistResponse" message="tns:IFacade_CheckUserExist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectIdByLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFacade/SelectIdByLogin" message="tns:IFacade_SelectIdByLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFacade/SelectIdByLoginResponse" message="tns:IFacade_SelectIdByLogin_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IFacade" type="tns:IFacade">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateActor">
+      <soap:operation soapAction="http://tempuri.org/IFacade/CreateActor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteActor">
+      <soap:operation soapAction="http://tempuri.org/IFacade/DeleteActor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyActor">
+      <soap:operation soapAction="http://tempuri.org/IFacade/ModifyActor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectOneActor">
+      <soap:operation soapAction="http://tempuri.org/IFacade/SelectOneActor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllActor">
+      <soap:operation soapAction="http://tempuri.org/IFacade/SelectAllActor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectActorByMovie">
+      <soap:operation soapAction="http://tempuri.org/IFacade/SelectActorByMovie" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateComment">
+      <soap:operation soapAction="http://tempuri.org/IFacade/CreateComment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteComment">
+      <soap:operation soapAction="http://tempuri.org/IFacade/DeleteComment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyComment">
+      <soap:operation soapAction="http://tempuri.org/IFacade/ModifyComment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectOneComment">
+      <soap:operation soapAction="http://tempuri.org/IFacade/SelectOneComment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllComment">
+      <soap:operation soapAction="http://tempuri.org/IFacade/SelectAllComment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectCommentByMovie">
+      <soap:operation soapAction="http://tempuri.org/IFacade/SelectCommentByMovie" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectRating">
+      <soap:operation soapAction="http://tempuri.org/IFacade/SelectRating" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDirector">
+      <soap:operation soapAction="http://tempuri.org/IFacade/CreateDirector" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDirector">
+      <soap:operation soapAction="http://tempuri.org/IFacade/DeleteDirector" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyDirector">
+      <soap:operation soapAction="http://tempuri.org/IFacade/ModifyDirector" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectOneDirector">
+      <soap:operation soapAction="http://tempuri.org/IFacade/SelectOneDirector" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllDirector">
+      <soap:operation soapAction="http://tempuri.org/IFacade/SelectAllDirector" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateImage">
+      <soap:operation soapAction="http://tempuri.org/IFacade/CreateImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteImage">
+      <soap:operation soapAction="http://tempuri.org/IFacade/DeleteImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyImage">
+      <soap:operation soapAction="http://tempuri.org/IFacade/ModifyImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectOneImage">
+      <soap:operation soapAction="http://tempuri.org/IFacade/SelectOneImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllImage">
+      <soap:operation soapAction="http://tempuri.org/IFacade/SelectAllImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateMovie">
+      <soap:operation soapAction="http://tempuri.org/IFacade/CreateMovie" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMovie">
+      <soap:operation soapAction="http://tempuri.org/IFacade/DeleteMovie" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyMovie">
+      <soap:operation soapAction="http://tempuri.org/IFacade/ModifyMovie" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectOneMovie">
+      <soap:operation soapAction="http://tempuri.org/IFacade/SelectOneMovie" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllMovie">
+      <soap:operation soapAction="http://tempuri.org/IFacade/SelectAllMovie" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMovieActors">
+      <soap:operation soapAction="http://tempuri.org/IFacade/AddMovieActors" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMovieActors">
+      <soap:operation soapAction="http://tempuri.org/IFacade/DeleteMovieActors" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectMovieByTitle">
+      <soap:operation soapAction="http://tempuri.org/IFacade/SelectMovieByTitle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectMovieByMovieType">
+      <soap:operation soapAction="http://tempuri.org/IFacade/SelectMovieByMovieType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateMovieType">
+      <soap:operation soapAction="http://tempuri.org/IFacade/CreateMovieType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteMovieType">
+      <soap:operation soapAction="http://tempuri.org/IFacade/DeleteMovieType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyMovieType">
+      <soap:operation soapAction="http://tempuri.org/IFacade/ModifyMovieType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectOneMovieType">
+      <soap:operation soapAction="http://tempuri.org/IFacade/SelectOneMovieType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllMovieType">
+      <soap:operation soapAction="http://tempuri.org/IFacade/SelectAllMovieType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUser">
+      <soap:operation soapAction="http://tempuri.org/IFacade/CreateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap:operation soapAction="http://tempuri.org/IFacade/DeleteUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifyUser">
+      <soap:operation soapAction="http://tempuri.org/IFacade/ModifyUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectOneUser">
+      <soap:operation soapAction="http://tempuri.org/IFacade/SelectOneUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllUser">
+      <soap:operation soapAction="http://tempuri.org/IFacade/SelectAllUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUser">
+      <soap:operation soapAction="http://tempuri.org/IFacade/CheckUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserExist">
+      <soap:operation soapAction="http://tempuri.org/IFacade/CheckUserExist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectIdByLogin">
+      <soap:operation soapAction="http://tempuri.org/IFacade/SelectIdByLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Facade">
+    <wsdl:port name="BasicHttpBinding_IFacade" binding="tns:BasicHttpBinding_IFacade">
+      <soap:address location="http://localhost:54321/Facade.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,22 @@
+﻿<Page x:Class="MovieNetWpf.View.ProfilPage"
+      x:Name="ProfilPageName"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d"
+      DataContext="{Binding Source={StaticResource ViewModelLocator}, Path=ProfilVM}"
+      Title="ProfilPage" Height="449.618" Width="406.87">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="157,13,0,0" TextWrapping="Wrap" Text="Profile de " FontSize="22" VerticalAlignment="Top" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding UserName}" FontSize="22" VerticalAlignment="Top" Margin="255,13,0,0" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Modifier le mot de passe" FontSize="16" VerticalAlignment="Top" Margin="11,59,0,0" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Ancien mot de passe :" VerticalAlignment="Top" Margin="10,90,0,0" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nouveau mot de passe : " VerticalAlignment="Top" Margin="11,145,0,0" Foreground="White"/>
+        <TextBox HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" Text="{Binding OldPass}" VerticalAlignment="Top" Width="120" Margin="161,89,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="19" TextWrapping="Wrap" Text="{Binding NewPass}" VerticalAlignment="Top" Width="120" Margin="161,145,0,0"/>
+        <Button Content="Modifier" Command="{Binding CommandUpdatePass}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="157,187,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Cliquez sur ce bouton pour supprimer votre compte" VerticalAlignment="Top" Margin="44,251,0,0" Foreground="Red"/>
+        <Button Content="Supprimer mon compte" Command="{Binding CommandDeleteUser}"  CommandParameter="{Binding ElementName=ProfilPageName}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="134" Margin="126,313,0,0"/>
+    </Grid>
+</Page>

@@ -1,0 +1,32 @@
+﻿<Window x:Class="MovieNetWpf.MainWindow"
+        x:Name="MainWindowName"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MovieNetWpf"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:cmd="http://www.galasoft.ch/mvvmlight"
+        mc:Ignorable="d"
+        DataContext="{Binding Source={StaticResource ViewModelLocator}, Path=MainVM}"
+        Title="MainWindow" Height="456" Width="446" Background="#FF252323" Foreground="{x:Null}" FontSize="10">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Closing">
+            <cmd:EventToCommand Command="{Binding OnClosingCommand}" 
+                                PassEventArgsToCommand="True"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="pack://application:,,,/Resources/movie-clapper.png"/>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="IDENTIFIANT" VerticalAlignment="Top" Margin="38,240,0,0" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="MOT DE PASSE" VerticalAlignment="Top" Margin="38,300,0,0" Foreground="White"/>
+        <TextBox Text="{Binding User}" Name="user" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="268" Margin="135,238,0,0" Foreground="White" Background="Black"/>
+        <PasswordBox local:PasswordBoxAssistant.BindPassword="true"  local:PasswordBoxAssistant.BoundPassword="{Binding Path=Password, Mode=TwoWay}" Name="pass" HorizontalAlignment="Left" VerticalAlignment="Top" Width="268" Margin="135,298,0,0" Height="20" Background="Black" Foreground="White" BorderBrush="White"/>
+        <Button Content="CONNECT" Command="{Binding CommandConnect}" CommandParameter="{Binding ElementName=MainWindowName}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="328,368,0,0" Background="Black" Foreground="White" BorderBrush="White"/>
+        <Button Content="REGISTER" Command="{Binding CommandRegister}" CommandParameter="{Binding ElementName=MainWindowName}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="42,368,0,0" BorderBrush="White" Foreground="White" Background="Black"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="MOVIE NET" VerticalAlignment="Top" Margin="42,173,0,0" Foreground="White" Width="361" TextAlignment="Center" FontSize="20" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="193,364,0,0" Foreground="White" Height="33" TextAlignment="Center" FontStyle="Italic"><Run Text="theoph_m"/><LineBreak/><Run Text="heng_m"/></TextBlock>
+    </Grid>
+</Window>

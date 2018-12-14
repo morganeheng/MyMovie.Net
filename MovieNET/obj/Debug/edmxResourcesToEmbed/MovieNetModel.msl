@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MovieLibraryModelStoreContainer" CdmEntityContainer="MovieLibraryEntities">
+    <EntitySetMapping Name="Actor">
+      <EntityTypeMapping TypeName="IsTypeOf(MovieLibraryModel.Actor)">
+        <MappingFragment StoreEntitySet="Actor">
+          <ScalarProperty Name="Id_actor" ColumnName="Id_actor" />
+          <ScalarProperty Name="Firstname" ColumnName="Firstname" />
+          <ScalarProperty Name="Lastname" ColumnName="Lastname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comment">
+      <EntityTypeMapping TypeName="IsTypeOf(MovieLibraryModel.Comment)">
+        <MappingFragment StoreEntitySet="Comment">
+          <ScalarProperty Name="Id_comment" ColumnName="Id_comment" />
+          <ScalarProperty Name="Id_movie" ColumnName="Id_movie" />
+          <ScalarProperty Name="Id_user" ColumnName="Id_user" />
+          <ScalarProperty Name="Comment1" ColumnName="Comment1" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Director">
+      <EntityTypeMapping TypeName="IsTypeOf(MovieLibraryModel.Director)">
+        <MappingFragment StoreEntitySet="Director">
+          <ScalarProperty Name="Id_director" ColumnName="Id_director" />
+          <ScalarProperty Name="Firstname" ColumnName="Firstname" />
+          <ScalarProperty Name="Lastname" ColumnName="Lastname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Image">
+      <EntityTypeMapping TypeName="IsTypeOf(MovieLibraryModel.Image)">
+        <MappingFragment StoreEntitySet="Image">
+          <ScalarProperty Name="Id_Image" ColumnName="Id_Image" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Movie">
+      <EntityTypeMapping TypeName="IsTypeOf(MovieLibraryModel.Movie)">
+        <MappingFragment StoreEntitySet="Movie">
+          <ScalarProperty Name="Id_movie" ColumnName="Id_movie" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Synopsis" ColumnName="Synopsis" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Id_type" ColumnName="Id_type" />
+          <ScalarProperty Name="Id_director" ColumnName="Id_director" />
+          <ScalarProperty Name="Id_image" ColumnName="Id_image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovieType">
+      <EntityTypeMapping TypeName="IsTypeOf(MovieLibraryModel.MovieType)">
+        <MappingFragment StoreEntitySet="MovieType">
+          <ScalarProperty Name="Id_type" ColumnName="Id_type" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="IsTypeOf(MovieLibraryModel.User)">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Id_user" ColumnName="Id_user" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="MovieActor" TypeName="MovieLibraryModel.MovieActor" StoreEntitySet="MovieActor">
+      <EndProperty Name="Actor">
+        <ScalarProperty Name="Id_actor" ColumnName="Actor_Id_actor" />
+      </EndProperty>
+      <EndProperty Name="Movie">
+        <ScalarProperty Name="Id_movie" ColumnName="Movie_Id_movie" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

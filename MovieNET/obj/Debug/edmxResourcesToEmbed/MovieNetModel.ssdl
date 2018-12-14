@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MovieLibraryModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MovieLibraryModelStoreContainer">
+    <EntitySet Name="Actor" EntityType="MovieLibraryModel.Store.Actor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Comment" EntityType="MovieLibraryModel.Store.Comment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Director" EntityType="MovieLibraryModel.Store.Director" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Image" EntityType="MovieLibraryModel.Store.Image" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Movie" EntityType="MovieLibraryModel.Store.Movie" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MovieType" EntityType="MovieLibraryModel.Store.MovieType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User" EntityType="MovieLibraryModel.Store.User" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MovieActor" EntityType="MovieLibraryModel.Store.MovieActor" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Comment_Movie" Association="MovieLibraryModel.Store.FK_Comment_Movie">
+      <End Role="Movie" EntitySet="Movie" />
+      <End Role="Comment" EntitySet="Comment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comment_User" Association="MovieLibraryModel.Store.FK_Comment_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Comment" EntitySet="Comment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movie_Director" Association="MovieLibraryModel.Store.FK_Movie_Director">
+      <End Role="Director" EntitySet="Director" />
+      <End Role="Movie" EntitySet="Movie" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movie_Image" Association="MovieLibraryModel.Store.FK_Movie_Image">
+      <End Role="Image" EntitySet="Image" />
+      <End Role="Movie" EntitySet="Movie" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movie_MovieType" Association="MovieLibraryModel.Store.FK_Movie_MovieType">
+      <End Role="MovieType" EntitySet="MovieType" />
+      <End Role="Movie" EntitySet="Movie" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MovieActor_Actor" Association="MovieLibraryModel.Store.FK_MovieActor_Actor">
+      <End Role="Actor" EntitySet="Actor" />
+      <End Role="MovieActor" EntitySet="MovieActor" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MovieActor_Movie" Association="MovieLibraryModel.Store.FK_MovieActor_Movie">
+      <End Role="Movie" EntitySet="Movie" />
+      <End Role="MovieActor" EntitySet="MovieActor" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Actor">
+    <Key>
+      <PropertyRef Name="Id_actor" />
+    </Key>
+    <Property Name="Id_actor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Firstname" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Lastname" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="Id_comment" />
+    </Key>
+    <Property Name="Id_comment" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_movie" Type="int" Nullable="false" />
+    <Property Name="Id_user" Type="int" Nullable="false" />
+    <Property Name="Comment1" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Rating" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Director">
+    <Key>
+      <PropertyRef Name="Id_director" />
+    </Key>
+    <Property Name="Id_director" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Firstname" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Lastname" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Image">
+    <Key>
+      <PropertyRef Name="Id_Image" />
+    </Key>
+    <Property Name="Id_Image" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="URL" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Movie">
+    <Key>
+      <PropertyRef Name="Id_movie" />
+    </Key>
+    <Property Name="Id_movie" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Synopsis" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Rating" Type="float" Nullable="false" />
+    <Property Name="Duration" Type="time" Nullable="false" Precision="7" />
+    <Property Name="Id_type" Type="int" Nullable="false" />
+    <Property Name="Id_director" Type="int" Nullable="false" />
+    <Property Name="Id_image" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MovieType">
+    <Key>
+      <PropertyRef Name="Id_type" />
+    </Key>
+    <Property Name="Id_type" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Type" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id_user" />
+    </Key>
+    <Property Name="Id_user" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MovieActor">
+    <Key>
+      <PropertyRef Name="Actor_Id_actor" />
+      <PropertyRef Name="Movie_Id_movie" />
+    </Key>
+    <Property Name="Actor_Id_actor" Type="int" Nullable="false" />
+    <Property Name="Movie_Id_movie" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Comment_Movie">
+    <End Role="Movie" Type="MovieLibraryModel.Store.Movie" Multiplicity="1" />
+    <End Role="Comment" Type="MovieLibraryModel.Store.Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Movie">
+        <PropertyRef Name="Id_movie" />
+      </Principal>
+      <Dependent Role="Comment">
+        <PropertyRef Name="Id_movie" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comment_User">
+    <End Role="User" Type="MovieLibraryModel.Store.User" Multiplicity="1" />
+    <End Role="Comment" Type="MovieLibraryModel.Store.Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id_user" />
+      </Principal>
+      <Dependent Role="Comment">
+        <PropertyRef Name="Id_user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movie_Director">
+    <End Role="Director" Type="MovieLibraryModel.Store.Director" Multiplicity="1" />
+    <End Role="Movie" Type="MovieLibraryModel.Store.Movie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Director">
+        <PropertyRef Name="Id_director" />
+      </Principal>
+      <Dependent Role="Movie">
+        <PropertyRef Name="Id_director" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movie_Image">
+    <End Role="Image" Type="MovieLibraryModel.Store.Image" Multiplicity="1" />
+    <End Role="Movie" Type="MovieLibraryModel.Store.Movie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Image">
+        <PropertyRef Name="Id_Image" />
+      </Principal>
+      <Dependent Role="Movie">
+        <PropertyRef Name="Id_image" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movie_MovieType">
+    <End Role="MovieType" Type="MovieLibraryModel.Store.MovieType" Multiplicity="1" />
+    <End Role="Movie" Type="MovieLibraryModel.Store.Movie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MovieType">
+        <PropertyRef Name="Id_type" />
+      </Principal>
+      <Dependent Role="Movie">
+        <PropertyRef Name="Id_type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MovieActor_Actor">
+    <End Role="Actor" Type="MovieLibraryModel.Store.Actor" Multiplicity="1" />
+    <End Role="MovieActor" Type="MovieLibraryModel.Store.MovieActor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Actor">
+        <PropertyRef Name="Id_actor" />
+      </Principal>
+      <Dependent Role="MovieActor">
+        <PropertyRef Name="Actor_Id_actor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MovieActor_Movie">
+    <End Role="MovieActor" Type="MovieLibraryModel.Store.MovieActor" Multiplicity="*" />
+    <End Role="Movie" Type="MovieLibraryModel.Store.Movie" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Movie">
+        <PropertyRef Name="Id_movie" />
+      </Principal>
+      <Dependent Role="MovieActor">
+        <PropertyRef Name="Movie_Id_movie" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

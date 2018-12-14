@@ -1,0 +1,38 @@
+﻿<Page x:Class="MovieNetWpf.View.DeletePage"
+      x:Name="DeletePageName"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MovieNetWpf.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="710" d:DesignWidth="710"
+      DataContext="{Binding Source={StaticResource ViewModelLocator}, Path=DeleteVM}"
+      Title="DeletePage">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="SUPPRIMER UN FILM" VerticalAlignment="Top" Margin="15,10,0,15" Foreground="White" Height="40" Width="675" FontSize="24" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Titre du film : " VerticalAlignment="Top" Margin="15,68,0,0" Foreground="White"/>
+        <TextBox Text="{Binding MovieTitle}" Name="movieTitle" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="430" Margin="110,68,0,0" Foreground="White" Background="Black"/>
+        <Button Content="Rechercher par titre" Command="{Binding CommandSearchByTitle}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="550,68,0,0" Background="Black" Foreground="White" BorderBrush="White"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Type du film : " VerticalAlignment="Top" Margin="15,93,0,0" Foreground="White"/>
+        <TextBox Text="{Binding MovieType}" Name="movieType" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="430" Margin="110,93,0,0" Foreground="White" Background="Black"/>
+        <Button Content="Rechercher par type" Command="{Binding CommandSearchByType}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="550,93,0,0" Background="Black" Foreground="White" BorderBrush="White"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding ListTitle}" VerticalAlignment="Top" Margin="15,128,0,0" Foreground="White" Height="30" Width="675" FontSize="20" TextAlignment="Center"/>
+        <ListBox x:Name="ListMovie" BorderThickness="0" ItemsSource="{Binding ListMovie}" SelectedItem="{Binding SelectedMovie}" Margin="15,168,0,15" Background="Black" Foreground="White">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Title}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseDoubleClick">
+                    <i:InvokeCommandAction Command="{Binding GoDeleteMovie}"
+                                           CommandParameter="{Binding ElementName=DeletePageName}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </ListBox>
+
+    </Grid>
+</Page>

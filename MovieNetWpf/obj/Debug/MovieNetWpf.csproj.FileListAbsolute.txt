@@ -1,0 +1,228 @@
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieNetWpf.exe.config
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieNetWpf.exe
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieNetWpf.pdb
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\EntityFramework.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\EntityFramework.xml
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MainWindow.g.cs
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\App.g.cs
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf_MarkupCompile.cache
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf_MarkupCompile.lref
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\App.baml
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MainWindow.baml
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf.g.resources
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf.Properties.Resources.resources
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf.csproj.GenerateResource.Cache
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf.exe
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf.pdb
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\MenuWindow.g.cs
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\MenuWindow.baml
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\AddPage.g.cs
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\DeletePage.g.cs
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\ListPage.g.cs
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\PageWindow.g.cs
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\ProfilPage.g.cs
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\SearchPage.g.cs
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\UpdatePage.g.cs
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\AddPage.baml
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\DeletePage.baml
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\ListPage.baml
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\PageWindow.baml
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\ProfilPage.baml
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\SearchPage.baml
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\UpdatePage.baml
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieLibrary.mdf
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieLibrary_log.ldf
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieNET.exe
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieNET.pdb
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieNET.exe.config
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf.csprojResolveAssemblyReference.cache
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\UpdatePageTwo.g.cs
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\UpdatePageTwo.baml
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieLibrary.mdf
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieLibrary_log.ldf
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieNetWpf.exe.config
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieNetWpf.exe
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieNetWpf.pdb
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\EntityFramework.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieNET.exe
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieNET.pdb
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieNET.exe.config
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\EntityFramework.xml
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf.csprojResolveAssemblyReference.cache
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MainWindow.g.cs
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\AddPage.g.cs
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\DeletePage.g.cs
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\ListPage.g.cs
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\MenuWindow.g.cs
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\PageWindow.g.cs
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\ProfilPage.g.cs
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\SearchPage.g.cs
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\UpdatePage.g.cs
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\UpdatePageTwo.g.cs
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\App.g.cs
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf_MarkupCompile.cache
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf_MarkupCompile.lref
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\App.baml
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MainWindow.baml
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\AddPage.baml
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\DeletePage.baml
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\ListPage.baml
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\MenuWindow.baml
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\PageWindow.baml
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\ProfilPage.baml
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\SearchPage.baml
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\UpdatePage.baml
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\UpdatePageTwo.baml
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf.g.resources
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf.Properties.Resources.resources
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf.csproj.GenerateResource.Cache
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf.exe
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf.pdb
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovieNet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\FilmPage.g.cs
+C:\Users\mylan_000\Desktop\Mylan\Rendu ETNA\commit\cmovieNet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\FilmPage.baml
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieLibrary.mdf
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieLibrary_log.ldf
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieNetWpf.exe.config
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieNetWpf.exe
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieNetWpf.pdb
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\EntityFramework.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieNET.exe
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieNET.pdb
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\MovieNET.exe.config
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\EntityFramework.xml
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf.csprojResolveAssemblyReference.cache
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\FilmPage.baml
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\ListPage.baml
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\ProfilPage.baml
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\SearchPage.baml
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\UpdatePage.baml
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MainWindow.g.cs
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\AddPage.g.cs
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\DeletePage.g.cs
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\FilmPage.g.cs
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\ListPage.g.cs
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\MenuWindow.g.cs
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\PageWindow.g.cs
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\ProfilPage.g.cs
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\SearchPage.g.cs
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\UpdatePage.g.cs
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\UpdatePageTwo.g.cs
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\App.g.cs
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf_MarkupCompile.cache
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf_MarkupCompile.lref
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\App.baml
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MainWindow.baml
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\AddPage.baml
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\DeletePage.baml
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\MenuWindow.baml
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\PageWindow.baml
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\UpdatePageTwo.baml
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf.g.resources
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf.Properties.Resources.resources
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf.csproj.GenerateResource.Cache
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf.exe
+C:\Users\Morgane\Downloads\cmovienet\cmovienet\theoph_m\MovieNET\MovieNetWpf\obj\Debug\MovieNetWpf.pdb
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\FilmPage.baml
+C:\Users\Morgane\Desktop\Piscine\MovieNET\theoph_m\MovieNET\MovieNetWpf\obj\Debug\View\FilmPage.g.cs

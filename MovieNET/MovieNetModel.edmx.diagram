@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e9324c7ca9f9433f97fd1eaada6d3c2f" Name="Diagram1">
+        <EntityTypeShape EntityType="MovieLibraryModel.Actor" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MovieLibraryModel.Comment" Width="1.5" PointX="5.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MovieLibraryModel.Director" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MovieLibraryModel.Image" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MovieLibraryModel.Movie" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MovieLibraryModel.MovieType" Width="1.5" PointX="0.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MovieLibraryModel.User" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <AssociationConnector Association="MovieLibraryModel.FK_Comment_Movie" ManuallyRouted="false" />
+        <AssociationConnector Association="MovieLibraryModel.FK_Comment_User" ManuallyRouted="false" />
+        <AssociationConnector Association="MovieLibraryModel.FK_Movie_Director" ManuallyRouted="false" />
+        <AssociationConnector Association="MovieLibraryModel.FK_Movie_Image" ManuallyRouted="false" />
+        <AssociationConnector Association="MovieLibraryModel.FK_Movie_MovieType" ManuallyRouted="false" />
+        <AssociationConnector Association="MovieLibraryModel.MovieActor" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

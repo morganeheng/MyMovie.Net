@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MovieLibraryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Actor">
+    <Key>
+      <PropertyRef Name="Id_actor" />
+    </Key>
+    <Property Name="Id_actor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Firstname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Lastname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Movie" Relationship="Self.MovieActor" FromRole="Actor" ToRole="Movie" />
+  </EntityType>
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="Id_comment" />
+    </Key>
+    <Property Name="Id_comment" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_movie" Type="Int32" Nullable="false" />
+    <Property Name="Id_user" Type="Int32" Nullable="false" />
+    <Property Name="Comment1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Rating" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Movie" Relationship="Self.FK_Comment_Movie" FromRole="Comment" ToRole="Movie" />
+    <NavigationProperty Name="User" Relationship="Self.FK_Comment_User" FromRole="Comment" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Director">
+    <Key>
+      <PropertyRef Name="Id_director" />
+    </Key>
+    <Property Name="Id_director" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Firstname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Lastname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Movie" Relationship="Self.FK_Movie_Director" FromRole="Director" ToRole="Movie" />
+  </EntityType>
+  <EntityType Name="Image">
+    <Key>
+      <PropertyRef Name="Id_Image" />
+    </Key>
+    <Property Name="Id_Image" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="URL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Movie" Relationship="Self.FK_Movie_Image" FromRole="Image" ToRole="Movie" />
+  </EntityType>
+  <EntityType Name="Movie">
+    <Key>
+      <PropertyRef Name="Id_movie" />
+    </Key>
+    <Property Name="Id_movie" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Synopsis" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Rating" Type="Double" Nullable="false" />
+    <Property Name="Duration" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="Id_type" Type="Int32" Nullable="false" />
+    <Property Name="Id_director" Type="Int32" Nullable="false" />
+    <Property Name="Id_image" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Comment" Relationship="Self.FK_Comment_Movie" FromRole="Movie" ToRole="Comment" />
+    <NavigationProperty Name="Director" Relationship="Self.FK_Movie_Director" FromRole="Movie" ToRole="Director" />
+    <NavigationProperty Name="Image" Relationship="Self.FK_Movie_Image" FromRole="Movie" ToRole="Image" />
+    <NavigationProperty Name="MovieType" Relationship="Self.FK_Movie_MovieType" FromRole="Movie" ToRole="MovieType" />
+    <NavigationProperty Name="Actor" Relationship="Self.MovieActor" FromRole="Movie" ToRole="Actor" />
+  </EntityType>
+  <EntityType Name="MovieType">
+    <Key>
+      <PropertyRef Name="Id_type" />
+    </Key>
+    <Property Name="Id_type" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Movie" Relationship="Self.FK_Movie_MovieType" FromRole="MovieType" ToRole="Movie" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id_user" />
+    </Key>
+    <Property Name="Id_user" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Comment" Relationship="Self.FK_Comment_User" FromRole="User" ToRole="Comment" />
+  </EntityType>
+  <Association Name="FK_Comment_Movie">
+    <End Role="Movie" Type="Self.Movie" Multiplicity="1" />
+    <End Role="Comment" Type="Self.Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Movie">
+        <PropertyRef Name="Id_movie" />
+      </Principal>
+      <Dependent Role="Comment">
+        <PropertyRef Name="Id_movie" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comment_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Comment" Type="Self.Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id_user" />
+      </Principal>
+      <Dependent Role="Comment">
+        <PropertyRef Name="Id_user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movie_Director">
+    <End Role="Director" Type="Self.Director" Multiplicity="1" />
+    <End Role="Movie" Type="Self.Movie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Director">
+        <PropertyRef Name="Id_director" />
+      </Principal>
+      <Dependent Role="Movie">
+        <PropertyRef Name="Id_director" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movie_Image">
+    <End Role="Image" Type="Self.Image" Multiplicity="1" />
+    <End Role="Movie" Type="Self.Movie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Image">
+        <PropertyRef Name="Id_Image" />
+      </Principal>
+      <Dependent Role="Movie">
+        <PropertyRef Name="Id_image" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Movie_MovieType">
+    <End Role="MovieType" Type="Self.MovieType" Multiplicity="1" />
+    <End Role="Movie" Type="Self.Movie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MovieType">
+        <PropertyRef Name="Id_type" />
+      </Principal>
+      <Dependent Role="Movie">
+        <PropertyRef Name="Id_type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MovieActor">
+    <End Role="Actor" Type="Self.Actor" Multiplicity="*" />
+    <End Role="Movie" Type="Self.Movie" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="MovieLibraryEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Actor" EntityType="Self.Actor" />
+    <EntitySet Name="Comment" EntityType="Self.Comment" />
+    <EntitySet Name="Director" EntityType="Self.Director" />
+    <EntitySet Name="Image" EntityType="Self.Image" />
+    <EntitySet Name="Movie" EntityType="Self.Movie" />
+    <EntitySet Name="MovieType" EntityType="Self.MovieType" />
+    <EntitySet Name="User" EntityType="Self.User" />
+    <AssociationSet Name="FK_Comment_Movie" Association="Self.FK_Comment_Movie">
+      <End Role="Movie" EntitySet="Movie" />
+      <End Role="Comment" EntitySet="Comment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comment_User" Association="Self.FK_Comment_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Comment" EntitySet="Comment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movie_Director" Association="Self.FK_Movie_Director">
+      <End Role="Director" EntitySet="Director" />
+      <End Role="Movie" EntitySet="Movie" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movie_Image" Association="Self.FK_Movie_Image">
+      <End Role="Image" EntitySet="Image" />
+      <End Role="Movie" EntitySet="Movie" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Movie_MovieType" Association="Self.FK_Movie_MovieType">
+      <End Role="MovieType" EntitySet="MovieType" />
+      <End Role="Movie" EntitySet="Movie" />
+    </AssociationSet>
+    <AssociationSet Name="MovieActor" Association="Self.MovieActor">
+      <End Role="Actor" EntitySet="Actor" />
+      <End Role="Movie" EntitySet="Movie" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
